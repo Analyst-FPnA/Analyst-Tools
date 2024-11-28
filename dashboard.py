@@ -3,16 +3,21 @@ import streamlit as st
 # Judul Dashboard
 st.title("Analyst Database")
 
+font_path = os.path.join('assets', 'fonts', 'Cabo-Rounded-Regular.otf')
+
 # Deskripsi dengan font khusus
 st.markdown(
-    """
+    f"""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    h1 {
-        font-family: 'Roboto', sans-serif;
+    @font-face {{
+        font-family: 'Cabo Rounded';
+        src: url('{font_path}') format('truetype');
+    }}
+    h1 {{
+        font-family: 'Cabo Rounded', sans-serif;
         font-size: 25px;
         color: #222831;
-    }
+    }}
     </style>
     <h1>DASHBOARD</h1>
     """,
@@ -27,8 +32,8 @@ with app1:
         """
         <a href='https://docs.google.com/spreadsheets/d/1n8HHYmRPGFZH21bLVBkb13jxhWEwIpVQJZ0bO529gQ0/edit?gid=0#gid=0' 
            target='_blank' style='text-decoration:none;'>
-            <div style='background-color:#CDC1FF; padding:20px; text-align:center; border-radius:10px; color:#222831; 
-                        font-family:Roboto,sans-serif; font-size:16px;'>
+            <div style='background-color:#00B2D6; padding:20px; text-align:center; border-radius:10px; color:#222831; 
+                        font-family:Cabo-Rounded,sans-serif; font-size:16px;'>
                 <strong style='color:white;'>Analyst Jobdesc Recap</strong>
             </div>
         </a>
@@ -44,8 +49,8 @@ with app2:
         """
         <a href='https://docs.google.com/spreadsheets/d/15LL3oA7cfSFSHNWCjKLrRCywtNsaCsDqO0GSnHVX63Q/edit?gid=0#gid=0' 
            target='_blank' style='text-decoration:none;'>
-            <div style='background-color:#CDC1FF; padding:20px; text-align:center; border-radius:10px; color:#222831; 
-                        font-family:Roboto,sans-serif; font-size:16px;'>
+            <div style='background-color:#00B2D6; padding:20px; text-align:center; border-radius:10px; color:#222831; 
+                        font-family:Cabo-Rounded,sans-serif; font-size:16px;'>
                 <strong style='color:white;'>Req CN to Validasi BA</strong>
             </div>
         </a>
