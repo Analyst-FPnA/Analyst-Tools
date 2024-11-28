@@ -18,7 +18,7 @@ st.markdown(
     h1 {{
         font-family: 'Cabo Rounded', sans-serif;
         font-size: 25px;
-        color: #222831;
+        color: #FFFFFF;
     }}
     </style>
     <h1>DASHBOARD</h1>
