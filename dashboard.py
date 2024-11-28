@@ -11,7 +11,7 @@ st.markdown(
     h1 {
         font-family: 'Roboto', sans-serif;
         font-size: 25px;
-        color: #CDC1FF;
+        color: #FFF6E3;
     }
     </style>
     <h1>DASHBOARD</h1>
