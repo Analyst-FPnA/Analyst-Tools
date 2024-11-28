@@ -1,8 +1,10 @@
 import streamlit as st
+import os
 
 # Judul Dashboard
 st.title("Analyst Database")
 
+# Tentukan path font
 font_path = os.path.join('assets', 'fonts', 'Cabo-Rounded-Regular.otf')
 
 # Deskripsi dengan font khusus
@@ -11,7 +13,7 @@ st.markdown(
     <style>
     @font-face {{
         font-family: 'Cabo Rounded';
-        src: url('{font_path}') format('truetype');
+        src: url('{font_path}') format('opentype');
     }}
     h1 {{
         font-family: 'Cabo Rounded', sans-serif;
@@ -24,7 +26,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Layout kotak interaktif
+# Layout kotak interaktif pertama
 app1 = st.columns(1)[0]
 
 with app1:
@@ -41,7 +43,7 @@ with app1:
         unsafe_allow_html=True,
     )
 
-# Baris kedua
+# Layout kotak interaktif kedua
 app2 = st.columns(1)[0]
 
 with app2:
