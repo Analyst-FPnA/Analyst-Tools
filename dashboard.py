@@ -6,7 +6,7 @@ static_dir = os.path.join(os.path.dirname(__file__), "public")
 
 # Path gambar dan font
 font_path = os.path.join("assets", "fonts", "Cabo-Rounded-Regular.otf")
-background_path = "/public/assets/images/Background.png"  # Path URL untuk gambar
+background_path = "https://raw.githubusercontent.com/Analyst-FPnA/Analyst-Tools/main/public/assets/images/Background.png"  # Path URL untuk gambar
 
 # Deskripsi dengan font khusus dan background
 st.markdown(
@@ -18,7 +18,7 @@ st.markdown(
     }}
     h1 {{
         font-family: 'Cabo Rounded', sans-serif;
-        font-size: 45px;
+        font-size: 50px;
         color: #FFFFFF;
         text-align: center;
         padding: 20px;
