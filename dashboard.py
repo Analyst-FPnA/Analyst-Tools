@@ -1,11 +1,14 @@
 import streamlit as st
 import os
 
-# Tentukan path font
-font_path = os.path.join('assets', 'fonts', 'Cabo-Rounded-Regular.otf')
-background_path = os.path.join('assets', 'images', 'Background.png')
+# Tentukan direktori file statis
+static_dir = os.path.join(os.path.dirname(__file__), "public")
 
-# Deskripsi dengan font khusus
+# Path gambar dan font
+font_path = os.path.join("assets", "fonts", "Cabo-Rounded-Regular.otf")
+background_path = "/public/assets/images/Background.png"  # Path URL untuk gambar
+
+# Deskripsi dengan font khusus dan background
 st.markdown(
     f"""
     <style>
@@ -23,7 +26,7 @@ st.markdown(
         background-size: cover; /* Memastikan gambar menutupi area */
         background-repeat: no-repeat;
         background-position: center; /* Pusatkan gambar */
-        border-radius: 10px; /* Opsional: Membuat sudut lebih lembut */
+        border-radius: 10px; /* Membuat sudut lebih lembut */
     }}
     </style>
     <h1>ANALYST DATABASE</h1>
