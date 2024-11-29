@@ -1,9 +1,6 @@
 import streamlit as st
 import os
 
-# Judul Dashboard
-st.title("Analyst Database")
-
 # Tentukan path font
 font_path = os.path.join('assets', 'fonts', 'Cabo-Rounded-Regular.otf')
 
@@ -19,9 +16,10 @@ st.markdown(
         font-family: 'Cabo Rounded', sans-serif;
         font-size: 25px;
         color: #FFFFFF;
+        text-align: center;
     }}
     </style>
-    <h1>DASHBOARD</h1>
+    <h1>ANALYST DATABASE</h1>
     """,
     unsafe_allow_html=True,
 )
@@ -35,7 +33,7 @@ with app1:
         <a href='https://docs.google.com/spreadsheets/d/1n8HHYmRPGFZH21bLVBkb13jxhWEwIpVQJZ0bO529gQ0/edit?gid=0#gid=0' 
            target='_blank' style='text-decoration:none;'>
             <div style='background-color:#00B2D6; padding:20px; text-align:center; border-radius:10px; color:#222831; 
-                        font-family:Cabo-Rounded,sans-serif; font-size:16px; border:2px solid black;'>
+                        font-family:Cabo Rounded,sans-serif; font-size:16px; border:3px solid black;'>
                 <strong style='color:white;'>Analyst Jobdesc Recap</strong>
             </div>
         </a>
@@ -52,7 +50,7 @@ with app2:
         <a href='https://docs.google.com/spreadsheets/d/15LL3oA7cfSFSHNWCjKLrRCywtNsaCsDqO0GSnHVX63Q/edit?gid=0#gid=0' 
            target='_blank' style='text-decoration:none;'>
             <div style='background-color:#00B2D6; padding:20px; text-align:center; border-radius:10px; color:#222831; 
-                        font-family:Cabo-Rounded,sans-serif; font-size:16px;'>
+                        font-family:Cabo Rounded,sans-serif; font-size:16px; border:3px solid black;'>
                 <strong style='color:white;'>Req CN to Validasi BA</strong>
             </div>
         </a>
