@@ -16,11 +16,6 @@ st.markdown(
         color: #FFFFFF;
         text-align: center;
         padding: 20px;
-        background-image: url('{background_path}');
-        background-size: cover; /* Memastikan gambar menutupi area */
-        background-repeat: no-repeat;
-        background-position: center; /* Pusatkan gambar */
-        border-radius: 10px; /* Membuat sudut lebih lembut */
     }}
     </style>
     <h1>ANALYST DATABASE</h1>
