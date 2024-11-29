@@ -61,7 +61,7 @@ with app2:
            target='_blank' style='text-decoration:none;'>
             <div style='background-color:#00B2D6; padding:20px; text-align:center; border-radius:10px; color:#222831; 
                         font-family:Cabo Rounded,sans-serif; font-size:25px; border:4px solid black;'>
-                <strong style='color:white;'>Req CN to Validasi BA</strong>
+                <strong style='color:white;'>Request Cancel Nota to Validasi BA</strong>
             </div>
         </a>
         """,
