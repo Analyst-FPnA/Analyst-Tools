@@ -1,14 +1,8 @@
 import streamlit as st
 import os
 
-# Tentukan direktori file statis
-static_dir = os.path.join(os.path.dirname(__file__), "public")
-
-# Path gambar dan font
 font_path = os.path.join("assets", "fonts", "Cabo-Rounded-Regular.otf")
-background_path = "https://raw.githubusercontent.com/Analyst-FPnA/Analyst-Tools/main/public/assets/images/Background.png"  # Path URL untuk gambar
 
-# Deskripsi dengan font khusus dan background
 st.markdown(
     f"""
     <style>
