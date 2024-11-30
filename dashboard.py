@@ -15,9 +15,10 @@ st.markdown(
     }}
     body {{
         background-image: url('{background_path}');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-size: contain; /* Ukuran gambar disesuaikan agar terlihat utuh */
+        background-repeat: no-repeat; /* Tidak mengulang gambar */
+        background-position: center; /* Gambar berada di tengah */
+        background-attachment: fixed; /* Background tetap saat scrolling */
     }}
     h1 {{
         font-family: 'Cabo Rounded', sans-serif;
@@ -31,10 +32,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# Judul aplikasi
 st.markdown("<h1>ANALYST DATABASE</h1>", unsafe_allow_html=True)
 
+# Layout kotak interaktif pertama
 app1 = st.columns(1)[0]
-
 with app1:
     st.markdown(
         """
@@ -49,8 +51,8 @@ with app1:
         unsafe_allow_html=True,
     )
 
+# Layout kotak interaktif kedua
 app2 = st.columns(1)[0]
-
 with app2:
     st.markdown(
         """
