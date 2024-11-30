@@ -1,14 +1,23 @@
 import streamlit as st
 import os
 
+# Path untuk font dan background
 font_path = os.path.join("assets", "fonts", "Cabo-Rounded-Regular.otf")
+background_path = os.path.join("assets", "images", "Background.png")
 
+# CSS untuk styling background dan font
 st.markdown(
     f"""
     <style>
     @font-face {{
         font-family: 'Cabo Rounded';
         src: url('{font_path}') format('opentype');
+    }}
+    body {{
+        background-image: url('{background_path}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }}
     h1 {{
         font-family: 'Cabo Rounded', sans-serif;
@@ -18,10 +27,12 @@ st.markdown(
         padding: 20px;
     }}
     </style>
-    <h1>ANALYST DATABASE</h1>
     """,
     unsafe_allow_html=True,
 )
+
+# Judul aplikasi
+st.markdown("<h1>ANALYST DATABASE</h1>", unsafe_allow_html=True)
 
 # Layout kotak interaktif pertama
 app1 = st.columns(1)[0]
