@@ -31,10 +31,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Judul aplikasi
 st.markdown("<h1>ANALYST DATABASE</h1>", unsafe_allow_html=True)
 
-# Layout kotak interaktif pertama
 app1 = st.columns(1)[0]
 
 with app1:
@@ -51,7 +49,6 @@ with app1:
         unsafe_allow_html=True,
     )
 
-# Layout kotak interaktif kedua
 app2 = st.columns(1)[0]
 
 with app2:
