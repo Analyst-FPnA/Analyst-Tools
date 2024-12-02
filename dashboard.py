@@ -1,9 +1,13 @@
 import streamlit as st
 import os
+import base64
 
 # Path untuk font dan background
 font_path = os.path.join("assets", "fonts", "Cabo-Rounded-Regular.otf")
+
 background_path = os.path.join("assets", "images", "Background.png")
+with open(background_path, "rb") as image_file:
+    encoded_image = base64.b64encode(image_file.read()).decode()
 
 # CSS untuk styling background dan font
 st.markdown(
